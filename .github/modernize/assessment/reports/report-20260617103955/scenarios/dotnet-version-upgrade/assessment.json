@@ -1,0 +1,2684 @@
+{
+  "settings": {
+    "components": {
+      "code": true,
+      "binaries": false
+    },
+    "targetId": "net10.0",
+    "targetDisplayName": ".NETCoreApp,Version=v10.0"
+  },
+  "analysisStartTime": "2026-06-17T10:46:41.3514027Z",
+  "analysisEndTime": "2026-06-17T10:46:45.1905634Z",
+  "privacyModeHelpUrl": "https://go.microsoft.com/fwlink/?linkid=2270980",
+  "stats": {
+    "summary": {
+      "projects": 1,
+      "issues": 14,
+      "incidents": 113,
+      "effort": 113
+    },
+    "charts": {
+      "severity": {
+        "Mandatory": 65,
+        "Optional": 18,
+        "Potential": 30,
+        "Information": 0
+      },
+      "category": {
+        "NuGet": 40,
+        "Project": 2,
+        "Feature": 13,
+        "Api": 57,
+        "Binding": 1
+      }
+    }
+  },
+  "projects": [
+    {
+      "path": "DoctorPatient.csproj",
+      "startingProject": true,
+      "issues": 13,
+      "storyPoints": 113,
+      "properties": {
+        "appName": "DoctorPatient",
+        "projectKind": "Wap",
+        "frameworks": [
+          "net45"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": false,
+        "numberOfFiles": 94,
+        "numberOfCodeFiles": 63,
+        "linesTotal": 27485,
+        "linesOfCode": 3772,
+        "totalApiScanned": 1000,
+        "minLinesOfCodeToChange": 57,
+        "maxLinesOfCodeToChange": 57
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "c0c5492b-ba37-4949-85bc-ecdc55f29b93",
+          "ruleId": "NuGet.0002",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Antlr, 3.4.1.9004\n\nRecommendation:\n\nRemove Antlr, and replace with new package Antlr4 4.6.6",
+              "protected": "Antlr, 3.4.1.9004\n\nRecommendation:\n\nRemove Antlr, and replace with new package Antlr4 4.6.6"
+            },
+            "kind": "File",
+            "path": "DoctorPatient.csproj",
+            "snippet": "Antlr, 3.4.1.9004\n\nRecommendation:\n\nRemove Antlr, and replace with new package Antlr4 4.6.6",
+            "protectedSnippet": "Antlr, 3.4.1.9004\n\nRecommendation:\n\nRemove Antlr, and replace with new package Antlr4 4.6.6",
+            "label": "Antlr 3.4.1.9004",
+            "properties": {
+              "PackageId": "Antlr",
+              "PackageVersion": "3.4.1.9004",
+              "PackageNewVersion": null,
+              "PackageReplacements": "Replace with new package Antlr4=4.6.6"
+            }
+          }
+        },
+        {
+          "incidentId": "fce9d8ed-f8d3-4658-81c4-07b62ac27de2",
+          "ruleId": "NuGet.0002",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "EntityFramework, 6.1.0\n\nRecommendation:\n\nRemove EntityFramework, and replace with new package EntityFramework 6.5.2",
+              "protected": "EntityFramework, 6.1.0\n\nRecommendation:\n\nRemove EntityFramework, and replace with new package EntityFramework 6.5.2"
+            },
+            "kind": "File",
+            "path": "DoctorPatient.csproj",
+            "snippet": "EntityFramework, 6.1.0\n\nRecommendation:\n\nRemove EntityFramework, and replace with new package EntityFramework 6.5.2",
+            "protectedSnippet": "EntityFramework, 6.1.0\n\nRecommendation:\n\nRemove EntityFramework, and replace with new package EntityFramework 6.5.2",
+            "label": "EntityFramework 6.1.0",
+            "properties": {
+              "PackageId": "EntityFramework",
+              "PackageVersion": "6.1.0",
+              "PackageNewVersion": "6.5.2",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "05d1f3c7-c673-4930-a25a-572ecf73eea8",
+          "ruleId": "NuGet.0001",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNet.Identity.Core, 2.1.0\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Microsoft.AspNet.Identity.Core, 2.1.0\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "DoctorPatient.csproj",
+            "snippet": "Microsoft.AspNet.Identity.Core, 2.1.0\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Microsoft.AspNet.Identity.Core, 2.1.0\n\nRecommendation:\n\nNo supported version found",
+            "label": "Microsoft.AspNet.Identity.Core 2.1.0",
+            "properties": {
+              "PackageId": "Microsoft.AspNet.Identity.Core",
+              "PackageVersion": "2.1.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "b14af990-28e7-445f-b142-cf65c0a3d45b",
+          "ruleId": "NuGet.0001",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNet.Identity.EntityFramework, 2.1.0\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Microsoft.AspNet.Identity.EntityFramework, 2.1.0\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "DoctorPatient.csproj",
+            "snippet": "Microsoft.AspNet.Identity.EntityFramework, 2.1.0\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Microsoft.AspNet.Identity.EntityFramework, 2.1.0\n\nRecommendation:\n\nNo supported version found",
+            "label": "Microsoft.AspNet.Identity.EntityFramework 2.1.0",
+            "properties": {
+              "PackageId": "Microsoft.AspNet.Identity.EntityFramework",
+              "PackageVersion": "2.1.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "f85e255e-8353-4479-b71a-b31ee89f5258",
+          "ruleId": "NuGet.0001",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNet.Identity.Owin, 2.1.0\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Microsoft.AspNet.Identity.Owin, 2.1.0\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "DoctorPatient.csproj",
+            "snippet": "Microsoft.AspNet.Identity.Owin, 2.1.0\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Microsoft.AspNet.Identity.Owin, 2.1.0\n\nRecommendation:\n\nNo supported version found",
+            "label": "Microsoft.AspNet.Identity.Owin 2.1.0",
+            "properties": {
+              "PackageId": "Microsoft.AspNet.Identity.Owin",
+              "PackageVersion": "2.1.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "6ada0d0e-1147-46b0-8e75-bb94b47dc946",
+          "ruleId": "NuGet.0003",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNet.Mvc, 5.2.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+              "protected": "Microsoft.AspNet.Mvc, 5.2.0\n\nRecommendation:\n\nPackage functionality included with new framework reference"
+            },
+            "kind": "File",
+            "path": "DoctorPatient.csproj",
+            "snippet": "Microsoft.AspNet.Mvc, 5.2.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "protectedSnippet": "Microsoft.AspNet.Mvc, 5.2.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "label": "Microsoft.AspNet.Mvc 5.2.0",
+            "properties": {
+              "PackageId": "Microsoft.AspNet.Mvc",
+              "PackageVersion": "5.2.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "483043ee-cfff-4395-8cb9-ec38fbce7c27",
+          "ruleId": "NuGet.0003",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNet.Razor, 3.2.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+              "protected": "Microsoft.AspNet.Razor, 3.2.0\n\nRecommendation:\n\nPackage functionality included with new framework reference"
+            },
+            "kind": "File",
+            "path": "DoctorPatient.csproj",
+            "snippet": "Microsoft.AspNet.Razor, 3.2.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "protectedSnippet": "Microsoft.AspNet.Razor, 3.2.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "label": "Microsoft.AspNet.Razor 3.2.0",
+            "properties": {
+              "PackageId": "Microsoft.AspNet.Razor",
+              "PackageVersion": "3.2.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "b7c13470-06a2-4a88-aa34-8a779641036c",
+          "ruleId": "NuGet.0001",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNet.Web.Optimization, 1.1.1\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Microsoft.AspNet.Web.Optimization, 1.1.1\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "DoctorPatient.csproj",
+            "snippet": "Microsoft.AspNet.Web.Optimization, 1.1.1\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Microsoft.AspNet.Web.Optimization, 1.1.1\n\nRecommendation:\n\nNo supported version found",
+            "label": "Microsoft.AspNet.Web.Optimization 1.1.1",
+            "properties": {
+              "PackageId": "Microsoft.AspNet.Web.Optimization",
+              "PackageVersion": "1.1.1",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "afd11380-83f6-4639-9791-2893654e947b",
+          "ruleId": "NuGet.0003",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNet.WebPages, 3.2.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+              "protected": "Microsoft.AspNet.WebPages, 3.2.0\n\nRecommendation:\n\nPackage functionality included with new framework reference"
+            },
+            "kind": "File",
+            "path": "DoctorPatient.csproj",
+            "snippet": "Microsoft.AspNet.WebPages, 3.2.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "protectedSnippet": "Microsoft.AspNet.WebPages, 3.2.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "label": "Microsoft.AspNet.WebPages 3.2.0",
+            "properties": {
+              "PackageId": "Microsoft.AspNet.WebPages",
+              "PackageVersion": "3.2.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "8ca70b08-31de-42cc-8a3f-aee2c65721ce",
+          "ruleId": "NuGet.0001",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Owin, 2.1.0\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Microsoft.Owin, 2.1.0\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "DoctorPatient.csproj",
+            "snippet": "Microsoft.Owin, 2.1.0\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Microsoft.Owin, 2.1.0\n\nRecommendation:\n\nNo supported version found",
+            "label": "Microsoft.Owin 2.1.0",
+            "properties": {
+              "PackageId": "Microsoft.Owin",
+              "PackageVersion": "2.1.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "047580bb-2ba3-48b3-9898-ebeab4af943c",
+          "ruleId": "NuGet.0001",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Owin.Host.SystemWeb, 2.0.0\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Microsoft.Owin.Host.SystemWeb, 2.0.0\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "DoctorPatient.csproj",
+            "snippet": "Microsoft.Owin.Host.SystemWeb, 2.0.0\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Microsoft.Owin.Host.SystemWeb, 2.0.0\n\nRecommendation:\n\nNo supported version found",
+            "label": "Microsoft.Owin.Host.SystemWeb 2.0.0",
+            "properties": {
+              "PackageId": "Microsoft.Owin.Host.SystemWeb",
+              "PackageVersion": "2.0.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "b183c3ee-50ad-4748-b408-418562f2077c",
+          "ruleId": "NuGet.0001",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Owin.Security, 2.1.0\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Microsoft.Owin.Security, 2.1.0\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "DoctorPatient.csproj",
+            "snippet": "Microsoft.Owin.Security, 2.1.0\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Microsoft.Owin.Security, 2.1.0\n\nRecommendation:\n\nNo supported version found",
+            "label": "Microsoft.Owin.Security 2.1.0",
+            "properties": {
+              "PackageId": "Microsoft.Owin.Security",
+              "PackageVersion": "2.1.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "7aad9b5c-be1b-4c4c-831f-3d60f6260fab",
+          "ruleId": "NuGet.0001",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Owin.Security.Cookies, 2.1.0\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Microsoft.Owin.Security.Cookies, 2.1.0\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "DoctorPatient.csproj",
+            "snippet": "Microsoft.Owin.Security.Cookies, 2.1.0\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Microsoft.Owin.Security.Cookies, 2.1.0\n\nRecommendation:\n\nNo supported version found",
+            "label": "Microsoft.Owin.Security.Cookies 2.1.0",
+            "properties": {
+              "PackageId": "Microsoft.Owin.Security.Cookies",
+              "PackageVersion": "2.1.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "6ec3e4c7-08fa-4fb9-a723-a9b6484c10e3",
+          "ruleId": "NuGet.0001",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Owin.Security.Facebook, 2.0.0\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Microsoft.Owin.Security.Facebook, 2.0.0\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "DoctorPatient.csproj",
+            "snippet": "Microsoft.Owin.Security.Facebook, 2.0.0\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Microsoft.Owin.Security.Facebook, 2.0.0\n\nRecommendation:\n\nNo supported version found",
+            "label": "Microsoft.Owin.Security.Facebook 2.0.0",
+            "properties": {
+              "PackageId": "Microsoft.Owin.Security.Facebook",
+              "PackageVersion": "2.0.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "6991a31c-4362-41c9-8eea-7473792caf9c",
+          "ruleId": "NuGet.0001",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Owin.Security.Google, 2.0.0\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Microsoft.Owin.Security.Google, 2.0.0\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "DoctorPatient.csproj",
+            "snippet": "Microsoft.Owin.Security.Google, 2.0.0\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Microsoft.Owin.Security.Google, 2.0.0\n\nRecommendation:\n\nNo supported version found",
+            "label": "Microsoft.Owin.Security.Google 2.0.0",
+            "properties": {
+              "PackageId": "Microsoft.Owin.Security.Google",
+              "PackageVersion": "2.0.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "81e8feaa-4328-4ed8-ae3c-a0a41ebdc4a8",
+          "ruleId": "NuGet.0001",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Owin.Security.MicrosoftAccount, 2.0.0\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Microsoft.Owin.Security.MicrosoftAccount, 2.0.0\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "DoctorPatient.csproj",
+            "snippet": "Microsoft.Owin.Security.MicrosoftAccount, 2.0.0\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Microsoft.Owin.Security.MicrosoftAccount, 2.0.0\n\nRecommendation:\n\nNo supported version found",
+            "label": "Microsoft.Owin.Security.MicrosoftAccount 2.0.0",
+            "properties": {
+              "PackageId": "Microsoft.Owin.Security.MicrosoftAccount",
+              "PackageVersion": "2.0.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "2ef4a53f-2b30-43da-9c9f-38366a185982",
+          "ruleId": "NuGet.0001",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Owin.Security.OAuth, 2.1.0\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Microsoft.Owin.Security.OAuth, 2.1.0\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "DoctorPatient.csproj",
+            "snippet": "Microsoft.Owin.Security.OAuth, 2.1.0\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Microsoft.Owin.Security.OAuth, 2.1.0\n\nRecommendation:\n\nNo supported version found",
+            "label": "Microsoft.Owin.Security.OAuth 2.1.0",
+            "properties": {
+              "PackageId": "Microsoft.Owin.Security.OAuth",
+              "PackageVersion": "2.1.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "486ce678-e698-48b1-896f-1fd4990f266f",
+          "ruleId": "NuGet.0001",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Owin.Security.Twitter, 2.0.0\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Microsoft.Owin.Security.Twitter, 2.0.0\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "DoctorPatient.csproj",
+            "snippet": "Microsoft.Owin.Security.Twitter, 2.0.0\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Microsoft.Owin.Security.Twitter, 2.0.0\n\nRecommendation:\n\nNo supported version found",
+            "label": "Microsoft.Owin.Security.Twitter 2.0.0",
+            "properties": {
+              "PackageId": "Microsoft.Owin.Security.Twitter",
+              "PackageVersion": "2.0.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "890345f6-6430-4c57-baa4-a3296dec5e23",
+          "ruleId": "NuGet.0003",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Web.Infrastructure, 1.0.0.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+              "protected": "Microsoft.Web.Infrastructure, 1.0.0.0\n\nRecommendation:\n\nPackage functionality included with new framework reference"
+            },
+            "kind": "File",
+            "path": "DoctorPatient.csproj",
+            "snippet": "Microsoft.Web.Infrastructure, 1.0.0.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "protectedSnippet": "Microsoft.Web.Infrastructure, 1.0.0.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "label": "Microsoft.Web.Infrastructure 1.0.0.0",
+            "properties": {
+              "PackageId": "Microsoft.Web.Infrastructure",
+              "PackageVersion": "1.0.0.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "69ba9bdb-0195-407f-b3f8-6b69c7f89770",
+          "ruleId": "NuGet.0002",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Newtonsoft.Json, 5.0.6\n\nRecommendation:\n\nRemove Newtonsoft.Json, and replace with new package Newtonsoft.Json 13.0.4",
+              "protected": "Newtonsoft.Json, 5.0.6\n\nRecommendation:\n\nRemove Newtonsoft.Json, and replace with new package Newtonsoft.Json 13.0.4"
+            },
+            "kind": "File",
+            "path": "DoctorPatient.csproj",
+            "snippet": "Newtonsoft.Json, 5.0.6\n\nRecommendation:\n\nRemove Newtonsoft.Json, and replace with new package Newtonsoft.Json 13.0.4",
+            "protectedSnippet": "Newtonsoft.Json, 5.0.6\n\nRecommendation:\n\nRemove Newtonsoft.Json, and replace with new package Newtonsoft.Json 13.0.4",
+            "label": "Newtonsoft.Json 5.0.6",
+            "properties": {
+              "PackageId": "Newtonsoft.Json",
+              "PackageVersion": "5.0.6",
+              "PackageNewVersion": "13.0.4",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "5f0e2b45-959f-4813-aeb4-092df4615517",
+          "ruleId": "NuGet.0001",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Owin, 1.0\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Owin, 1.0\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "DoctorPatient.csproj",
+            "snippet": "Owin, 1.0\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Owin, 1.0\n\nRecommendation:\n\nNo supported version found",
+            "label": "Owin 1.0",
+            "properties": {
+              "PackageId": "Owin",
+              "PackageVersion": "1.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "790e4af5-56e7-492c-8ca5-a645618f2aef",
+          "ruleId": "NuGet.0001",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "TimePeriodLibrary.NET, 2.0.0\n\nRecommendation:\n\nTimePeriodLibrary.NET, 2.1.6",
+              "protected": "TimePeriodLibrary.NET, 2.0.0\n\nRecommendation:\n\nTimePeriodLibrary.NET, 2.1.6"
+            },
+            "kind": "File",
+            "path": "DoctorPatient.csproj",
+            "snippet": "TimePeriodLibrary.NET, 2.0.0\n\nRecommendation:\n\nTimePeriodLibrary.NET, 2.1.6",
+            "protectedSnippet": "TimePeriodLibrary.NET, 2.0.0\n\nRecommendation:\n\nTimePeriodLibrary.NET, 2.1.6",
+            "label": "TimePeriodLibrary.NET 2.0.0",
+            "properties": {
+              "PackageId": "TimePeriodLibrary.NET",
+              "PackageVersion": "2.0.0",
+              "PackageNewVersion": "2.1.6",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "581c05c1-edf0-4c03-b2df-6eb8220c6dc7",
+          "ruleId": "NuGet.0004",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "bootstrap, 3.0.0\n\nRecommendation:\n\nbootstrap, 5.3.8",
+              "protected": "bootstrap, 3.0.0\n\nRecommendation:\n\nbootstrap, 5.3.8"
+            },
+            "kind": "File",
+            "path": "DoctorPatient.csproj",
+            "snippet": "bootstrap, 3.0.0\n\nRecommendation:\n\nbootstrap, 5.3.8",
+            "protectedSnippet": "bootstrap, 3.0.0\n\nRecommendation:\n\nbootstrap, 5.3.8",
+            "label": "bootstrap 3.0.0",
+            "properties": {
+              "PackageId": "bootstrap",
+              "PackageVersion": "3.0.0",
+              "PackageNewVersion": "5.3.8",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "ebedf4c7-82a3-4ec9-97d0-daccf9603218",
+          "ruleId": "NuGet.0005",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "EntityFramework, 6.1.0\n\nRecommendation:\n\nShould be replaced.\nRemove EntityFramework, and replace with new package EntityFramework, 6.5.2",
+              "protected": "EntityFramework, 6.1.0\n\nRecommendation:\n\nShould be replaced.\nRemove EntityFramework, and replace with new package EntityFramework, 6.5.2"
+            },
+            "kind": "File",
+            "path": "DoctorPatient.csproj",
+            "snippet": "EntityFramework, 6.1.0\n\nRecommendation:\n\nShould be replaced.\nRemove EntityFramework, and replace with new package EntityFramework, 6.5.2",
+            "protectedSnippet": "EntityFramework, 6.1.0\n\nRecommendation:\n\nShould be replaced.\nRemove EntityFramework, and replace with new package EntityFramework, 6.5.2",
+            "label": "EntityFramework 6.1.0",
+            "properties": {
+              "PackageId": "EntityFramework",
+              "PackageVersion": "6.1.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "0dd94b8b-b408-4816-a67e-3f9248e0c710",
+          "ruleId": "NuGet.0004",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "jQuery, 1.10.2\n\nRecommendation:\n\njQuery, 3.7.1",
+              "protected": "jQuery, 1.10.2\n\nRecommendation:\n\njQuery, 3.7.1"
+            },
+            "kind": "File",
+            "path": "DoctorPatient.csproj",
+            "snippet": "jQuery, 1.10.2\n\nRecommendation:\n\njQuery, 3.7.1",
+            "protectedSnippet": "jQuery, 1.10.2\n\nRecommendation:\n\njQuery, 3.7.1",
+            "label": "jQuery 1.10.2",
+            "properties": {
+              "PackageId": "jQuery",
+              "PackageVersion": "1.10.2",
+              "PackageNewVersion": "3.7.1",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "a15d36c3-3f22-4af2-88cb-36ff8e89a990",
+          "ruleId": "NuGet.0004",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "jQuery.Validation, 1.11.1\n\nRecommendation:\n\njQuery.Validation, 1.21.0",
+              "protected": "jQuery.Validation, 1.11.1\n\nRecommendation:\n\njQuery.Validation, 1.21.0"
+            },
+            "kind": "File",
+            "path": "DoctorPatient.csproj",
+            "snippet": "jQuery.Validation, 1.11.1\n\nRecommendation:\n\njQuery.Validation, 1.21.0",
+            "protectedSnippet": "jQuery.Validation, 1.11.1\n\nRecommendation:\n\njQuery.Validation, 1.21.0",
+            "label": "jQuery.Validation 1.11.1",
+            "properties": {
+              "PackageId": "jQuery.Validation",
+              "PackageVersion": "1.11.1",
+              "PackageNewVersion": "1.21.0",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "983cc43e-b4bb-4e10-b657-39e394800330",
+          "ruleId": "NuGet.0004",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNet.Identity.Owin, 2.1.0\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Microsoft.AspNet.Identity.Owin, 2.1.0\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "DoctorPatient.csproj",
+            "snippet": "Microsoft.AspNet.Identity.Owin, 2.1.0\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Microsoft.AspNet.Identity.Owin, 2.1.0\n\nRecommendation:\n\nNo supported version found",
+            "label": "Microsoft.AspNet.Identity.Owin 2.1.0",
+            "properties": {
+              "PackageId": "Microsoft.AspNet.Identity.Owin",
+              "PackageVersion": "2.1.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "f848e974-a566-421e-8975-461dc9b4d39b",
+          "ruleId": "NuGet.0005",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNet.Web.Optimization, 1.1.1\n\nRecommendation:\n\nShould be replaced.\nRemove Microsoft.AspNet.Web.Optimization, and replace with new package LigerShark.WebOptimizer.Core, 3.0.477",
+              "protected": "Microsoft.AspNet.Web.Optimization, 1.1.1\n\nRecommendation:\n\nShould be replaced.\nRemove Microsoft.AspNet.Web.Optimization, and replace with new package LigerShark.WebOptimizer.Core, 3.0.477"
+            },
+            "kind": "File",
+            "path": "DoctorPatient.csproj",
+            "snippet": "Microsoft.AspNet.Web.Optimization, 1.1.1\n\nRecommendation:\n\nShould be replaced.\nRemove Microsoft.AspNet.Web.Optimization, and replace with new package LigerShark.WebOptimizer.Core, 3.0.477",
+            "protectedSnippet": "Microsoft.AspNet.Web.Optimization, 1.1.1\n\nRecommendation:\n\nShould be replaced.\nRemove Microsoft.AspNet.Web.Optimization, and replace with new package LigerShark.WebOptimizer.Core, 3.0.477",
+            "label": "Microsoft.AspNet.Web.Optimization 1.1.1",
+            "properties": {
+              "PackageId": "Microsoft.AspNet.Web.Optimization",
+              "PackageVersion": "1.1.1",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "3d98589c-080f-447d-94d2-10bb6eaf2ec0",
+          "ruleId": "NuGet.0004",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Owin, 2.1.0\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Microsoft.Owin, 2.1.0\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "DoctorPatient.csproj",
+            "snippet": "Microsoft.Owin, 2.1.0\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Microsoft.Owin, 2.1.0\n\nRecommendation:\n\nNo supported version found",
+            "label": "Microsoft.Owin 2.1.0",
+            "properties": {
+              "PackageId": "Microsoft.Owin",
+              "PackageVersion": "2.1.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "9a69b29c-0c11-47fe-a7a8-5aa3bff43b3c",
+          "ruleId": "NuGet.0005",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Owin, 2.1.0\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217",
+              "protected": "Microsoft.Owin, 2.1.0\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217"
+            },
+            "kind": "File",
+            "path": "DoctorPatient.csproj",
+            "snippet": "Microsoft.Owin, 2.1.0\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217",
+            "protectedSnippet": "Microsoft.Owin, 2.1.0\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217",
+            "label": "Microsoft.Owin 2.1.0",
+            "properties": {
+              "PackageId": "Microsoft.Owin",
+              "PackageVersion": "2.1.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "a97471ff-24b8-424c-98a0-e0aca52994f7",
+          "ruleId": "NuGet.0005",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Owin.Host.SystemWeb, 2.0.0\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217",
+              "protected": "Microsoft.Owin.Host.SystemWeb, 2.0.0\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217"
+            },
+            "kind": "File",
+            "path": "DoctorPatient.csproj",
+            "snippet": "Microsoft.Owin.Host.SystemWeb, 2.0.0\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217",
+            "protectedSnippet": "Microsoft.Owin.Host.SystemWeb, 2.0.0\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217",
+            "label": "Microsoft.Owin.Host.SystemWeb 2.0.0",
+            "properties": {
+              "PackageId": "Microsoft.Owin.Host.SystemWeb",
+              "PackageVersion": "2.0.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "3896b0fc-83c9-488d-bc84-fcdfa9c74693",
+          "ruleId": "NuGet.0005",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Owin.Security, 2.1.0\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217",
+              "protected": "Microsoft.Owin.Security, 2.1.0\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217"
+            },
+            "kind": "File",
+            "path": "DoctorPatient.csproj",
+            "snippet": "Microsoft.Owin.Security, 2.1.0\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217",
+            "protectedSnippet": "Microsoft.Owin.Security, 2.1.0\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217",
+            "label": "Microsoft.Owin.Security 2.1.0",
+            "properties": {
+              "PackageId": "Microsoft.Owin.Security",
+              "PackageVersion": "2.1.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "64cf6745-ee02-4573-9d88-737d00b29776",
+          "ruleId": "NuGet.0004",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Owin.Security.Cookies, 2.1.0\n\nRecommendation:\n\nNo supported version found",
+              "protected": "Microsoft.Owin.Security.Cookies, 2.1.0\n\nRecommendation:\n\nNo supported version found"
+            },
+            "kind": "File",
+            "path": "DoctorPatient.csproj",
+            "snippet": "Microsoft.Owin.Security.Cookies, 2.1.0\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Microsoft.Owin.Security.Cookies, 2.1.0\n\nRecommendation:\n\nNo supported version found",
+            "label": "Microsoft.Owin.Security.Cookies 2.1.0",
+            "properties": {
+              "PackageId": "Microsoft.Owin.Security.Cookies",
+              "PackageVersion": "2.1.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "29a26c19-e521-4e6d-be32-9389113b5342",
+          "ruleId": "NuGet.0005",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Owin.Security.Cookies, 2.1.0\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217 Use AddAuthentication().AddCookie() in Startup; adjust cookie options\nRemove Microsoft.Owin.Security.Cookies, and replace with new package Microsoft.AspNetCore.Authentication.Cookies, 2.3.11",
+              "protected": "Microsoft.Owin.Security.Cookies, 2.1.0\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217 Use AddAuthentication().AddCookie() in Startup; adjust cookie options\nRemove Microsoft.Owin.Security.Cookies, and replace with new package Microsoft.AspNetCore.Authentication.Cookies, 2.3.11"
+            },
+            "kind": "File",
+            "path": "DoctorPatient.csproj",
+            "snippet": "Microsoft.Owin.Security.Cookies, 2.1.0\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217 Use AddAuthentication().AddCookie() in Startup; adjust cookie options\nRemove Microsoft.Owin.Security.Cookies, and replace with new package Microsoft.AspNetCore.Authentication.Cookies, 2.3.11",
+            "protectedSnippet": "Microsoft.Owin.Security.Cookies, 2.1.0\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217 Use AddAuthentication().AddCookie() in Startup; adjust cookie options\nRemove Microsoft.Owin.Security.Cookies, and replace with new package Microsoft.AspNetCore.Authentication.Cookies, 2.3.11",
+            "label": "Microsoft.Owin.Security.Cookies 2.1.0",
+            "properties": {
+              "PackageId": "Microsoft.Owin.Security.Cookies",
+              "PackageVersion": "2.1.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": "Replace with new package Microsoft.AspNetCore.Authentication.Cookies=2.3.11"
+            }
+          }
+        },
+        {
+          "incidentId": "da9f4efe-5880-40b5-afec-108c034ecd68",
+          "ruleId": "NuGet.0005",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Owin.Security.Facebook, 2.0.0\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217",
+              "protected": "Microsoft.Owin.Security.Facebook, 2.0.0\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217"
+            },
+            "kind": "File",
+            "path": "DoctorPatient.csproj",
+            "snippet": "Microsoft.Owin.Security.Facebook, 2.0.0\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217",
+            "protectedSnippet": "Microsoft.Owin.Security.Facebook, 2.0.0\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217",
+            "label": "Microsoft.Owin.Security.Facebook 2.0.0",
+            "properties": {
+              "PackageId": "Microsoft.Owin.Security.Facebook",
+              "PackageVersion": "2.0.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "45ace3f1-6c43-4e78-ac62-587d5c03db3a",
+          "ruleId": "NuGet.0005",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Owin.Security.Google, 2.0.0\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217",
+              "protected": "Microsoft.Owin.Security.Google, 2.0.0\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217"
+            },
+            "kind": "File",
+            "path": "DoctorPatient.csproj",
+            "snippet": "Microsoft.Owin.Security.Google, 2.0.0\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217",
+            "protectedSnippet": "Microsoft.Owin.Security.Google, 2.0.0\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217",
+            "label": "Microsoft.Owin.Security.Google 2.0.0",
+            "properties": {
+              "PackageId": "Microsoft.Owin.Security.Google",
+              "PackageVersion": "2.0.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "dc95bb39-c134-4526-b721-30b3344604ca",
+          "ruleId": "NuGet.0005",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Owin.Security.MicrosoftAccount, 2.0.0\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217",
+              "protected": "Microsoft.Owin.Security.MicrosoftAccount, 2.0.0\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217"
+            },
+            "kind": "File",
+            "path": "DoctorPatient.csproj",
+            "snippet": "Microsoft.Owin.Security.MicrosoftAccount, 2.0.0\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217",
+            "protectedSnippet": "Microsoft.Owin.Security.MicrosoftAccount, 2.0.0\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217",
+            "label": "Microsoft.Owin.Security.MicrosoftAccount 2.0.0",
+            "properties": {
+              "PackageId": "Microsoft.Owin.Security.MicrosoftAccount",
+              "PackageVersion": "2.0.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "ae48b6b6-a389-4d9e-8561-18a83278c575",
+          "ruleId": "NuGet.0005",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Owin.Security.OAuth, 2.1.0\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217 Use JWT Bearer for token validation; adopt IdentityServer or Azure AD for issuing tokens\nRemove Microsoft.Owin.Security.OAuth, and replace with new package Microsoft.AspNetCore.Authentication.JwtBearer, 10.0.9",
+              "protected": "Microsoft.Owin.Security.OAuth, 2.1.0\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217 Use JWT Bearer for token validation; adopt IdentityServer or Azure AD for issuing tokens\nRemove Microsoft.Owin.Security.OAuth, and replace with new package Microsoft.AspNetCore.Authentication.JwtBearer, 10.0.9"
+            },
+            "kind": "File",
+            "path": "DoctorPatient.csproj",
+            "snippet": "Microsoft.Owin.Security.OAuth, 2.1.0\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217 Use JWT Bearer for token validation; adopt IdentityServer or Azure AD for issuing tokens\nRemove Microsoft.Owin.Security.OAuth, and replace with new package Microsoft.AspNetCore.Authentication.JwtBearer, 10.0.9",
+            "protectedSnippet": "Microsoft.Owin.Security.OAuth, 2.1.0\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217 Use JWT Bearer for token validation; adopt IdentityServer or Azure AD for issuing tokens\nRemove Microsoft.Owin.Security.OAuth, and replace with new package Microsoft.AspNetCore.Authentication.JwtBearer, 10.0.9",
+            "label": "Microsoft.Owin.Security.OAuth 2.1.0",
+            "properties": {
+              "PackageId": "Microsoft.Owin.Security.OAuth",
+              "PackageVersion": "2.1.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": "Replace with new package Microsoft.AspNetCore.Authentication.JwtBearer=10.0.9"
+            }
+          }
+        },
+        {
+          "incidentId": "0fdb5ff0-ae99-4326-98bf-0bedef59d544",
+          "ruleId": "NuGet.0005",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Owin.Security.Twitter, 2.0.0\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217",
+              "protected": "Microsoft.Owin.Security.Twitter, 2.0.0\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217"
+            },
+            "kind": "File",
+            "path": "DoctorPatient.csproj",
+            "snippet": "Microsoft.Owin.Security.Twitter, 2.0.0\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217",
+            "protectedSnippet": "Microsoft.Owin.Security.Twitter, 2.0.0\n\nRecommendation:\n\nThis package has been deprecated as part of the .NET Package Deprecation effort. You can learn more about it from https://github.com/dotnet/announcements/issues/217",
+            "label": "Microsoft.Owin.Security.Twitter 2.0.0",
+            "properties": {
+              "PackageId": "Microsoft.Owin.Security.Twitter",
+              "PackageVersion": "2.0.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "30f9cb02-379e-436f-a04a-79f23e8b1411",
+          "ruleId": "NuGet.0004",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Newtonsoft.Json, 5.0.6\n\nRecommendation:\n\nNewtonsoft.Json, 13.0.4",
+              "protected": "Newtonsoft.Json, 5.0.6\n\nRecommendation:\n\nNewtonsoft.Json, 13.0.4"
+            },
+            "kind": "File",
+            "path": "DoctorPatient.csproj",
+            "snippet": "Newtonsoft.Json, 5.0.6\n\nRecommendation:\n\nNewtonsoft.Json, 13.0.4",
+            "protectedSnippet": "Newtonsoft.Json, 5.0.6\n\nRecommendation:\n\nNewtonsoft.Json, 13.0.4",
+            "label": "Newtonsoft.Json 5.0.6",
+            "properties": {
+              "PackageId": "Newtonsoft.Json",
+              "PackageVersion": "5.0.6",
+              "PackageNewVersion": "13.0.4",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "dd8ca3fb-b014-498a-94b9-18b7d9f724f6",
+          "ruleId": "Project.0001",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "DoctorPatient.csproj"
+          }
+        },
+        {
+          "incidentId": "132e0a5e-458b-4090-aba5-1ef440981582",
+          "ruleId": "Project.0002",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Current target framework: .NETFramework,Version=v4.5\nRecommended target framework: net10.0",
+              "protected": "Current target framework: .NETFramework,Version=v4.5\nRecommended target framework: net10.0"
+            },
+            "kind": "File",
+            "path": "DoctorPatient.csproj",
+            "snippet": "Current target framework: .NETFramework,Version=v4.5\nRecommended target framework: net10.0",
+            "protectedSnippet": "Current target framework: .NETFramework,Version=v4.5\nRecommended target framework: net10.0",
+            "properties": {
+              "CurrentTargetFramework": ".NETFramework,Version=v4.5",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        },
+        {
+          "incidentId": "84b008d0-e31c-4fae-96ae-f8bb93fbc2ad",
+          "ruleId": "Feature.0001",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "Views\\Account\\Login.cshtml"
+          }
+        },
+        {
+          "incidentId": "7311a4c4-e8c6-4961-977a-5b18a29d60e9",
+          "ruleId": "Feature.0001",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "Views\\Account\\Manage.cshtml"
+          }
+        },
+        {
+          "incidentId": "14484505-99c0-41d1-a118-4f9dc404f6b4",
+          "ruleId": "Feature.0001",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "Views\\Account\\Register.cshtml"
+          }
+        },
+        {
+          "incidentId": "3a4d0b05-c370-4345-aa26-6417fbab5fe6",
+          "ruleId": "Feature.0001",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "Views\\Appointment\\Create.cshtml"
+          }
+        },
+        {
+          "incidentId": "01e0497e-a787-4fa2-97d3-e3f3b070e8b7",
+          "ruleId": "Feature.0001",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "Views\\Appointment\\Edit.cshtml"
+          }
+        },
+        {
+          "incidentId": "ffbdb909-7e75-415a-b3e3-6dfeafc59085",
+          "ruleId": "Feature.0001",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "Views\\Doctor\\Availability.cshtml"
+          }
+        },
+        {
+          "incidentId": "5b939f66-46a2-479c-b7cd-3bbcf5b91188",
+          "ruleId": "Feature.0001",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "Views\\Doctor\\Create.cshtml"
+          }
+        },
+        {
+          "incidentId": "b49842ec-ed7e-44e1-ad06-6cff35de0fc7",
+          "ruleId": "Feature.0001",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "Views\\Doctor\\Edit.cshtml"
+          }
+        },
+        {
+          "incidentId": "7c8b43f9-7eef-4633-abe5-e3d73e835d9f",
+          "ruleId": "Feature.0001",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "Views\\RegisteredUsers\\Edit.cshtml"
+          }
+        },
+        {
+          "incidentId": "91bacdd5-e0dc-4670-b683-44d5a6ba2946",
+          "ruleId": "Feature.0001",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "Views\\Shared\\_Layout.cshtml"
+          }
+        },
+        {
+          "incidentId": "227745bd-3b91-4a99-83e0-9f561866314c",
+          "ruleId": "Feature.1000",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "Global.asax.cs"
+          }
+        },
+        {
+          "incidentId": "32c218ea-350f-491e-b9f2-4e7dd3b01016",
+          "ruleId": "Feature.0002",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "Global.asax.cs"
+          }
+        },
+        {
+          "incidentId": "08509c86-ebf9-40f4-a2e8-416f60a4ac4d",
+          "ruleId": "Feature.0002",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "App_Start\\RouteConfig.cs"
+          }
+        },
+        {
+          "incidentId": "6c791dd6-74dd-443b-a2ae-5b7e99d2b1f0",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.SystemWebAdapters, 1.4.0. Add package reference to Microsoft.AspNetCore.SystemWebAdapters, 1.4.0",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "controller.Execute(new RequestContext(new HttpContextWrapper(Context), routeData));",
+              "protected": "T:System.Web.HttpContext"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "controller.Execute(new RequestContext(new HttpContextWrapper(Context), routeData));",
+            "protectedSnippet": "T:System.Web.HttpContext",
+            "label": "T:System.Web.HttpContext",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.SystemWebAdapters",
+              "PackageNewVersion": "1.4.0"
+            },
+            "line": 65,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "5669abbc-6ed2-4442-8828-c76512981ef8",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.SystemWebAdapters, 1.4.0. Add package reference to Microsoft.AspNetCore.SystemWebAdapters, 1.4.0",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "controller.Execute(new RequestContext(new HttpContextWrapper(Context), routeData));",
+              "protected": "P:System.Web.HttpApplication.Context"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "controller.Execute(new RequestContext(new HttpContextWrapper(Context), routeData));",
+            "protectedSnippet": "P:System.Web.HttpApplication.Context",
+            "label": "P:System.Web.HttpApplication.Context",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.SystemWebAdapters",
+              "PackageNewVersion": "1.4.0"
+            },
+            "line": 65,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "3e3aacb1-de08-4027-9e08-49320905fc62",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.SystemWebAdapters, 1.4.0. Add package reference to Microsoft.AspNetCore.SystemWebAdapters, 1.4.0",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "controller.Execute(new RequestContext(new HttpContextWrapper(Context), routeData));",
+              "protected": "T:System.Web.HttpContextWrapper"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "controller.Execute(new RequestContext(new HttpContextWrapper(Context), routeData));",
+            "protectedSnippet": "T:System.Web.HttpContextWrapper",
+            "label": "T:System.Web.HttpContextWrapper",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.SystemWebAdapters",
+              "PackageNewVersion": "1.4.0"
+            },
+            "line": 65,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "61c1ff88-4c19-4f65-b746-1ccb2de6e91a",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.SystemWebAdapters, 1.4.0. Add package reference to Microsoft.AspNetCore.SystemWebAdapters, 1.4.0",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "controller.Execute(new RequestContext(new HttpContextWrapper(Context), routeData));",
+              "protected": "M:System.Web.HttpContextWrapper.#ctor(System.Web.HttpContext)"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "controller.Execute(new RequestContext(new HttpContextWrapper(Context), routeData));",
+            "protectedSnippet": "M:System.Web.HttpContextWrapper.#ctor(System.Web.HttpContext)",
+            "label": "M:System.Web.HttpContextWrapper.#ctor(System.Web.HttpContext)",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.SystemWebAdapters",
+              "PackageNewVersion": "1.4.0"
+            },
+            "line": 65,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "b27dab38-297f-4da1-ba8f-2502f1b7b93c",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "controller.Execute(new RequestContext(new HttpContextWrapper(Context), routeData));",
+              "protected": "T:System.Web.Routing.RequestContext"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "controller.Execute(new RequestContext(new HttpContextWrapper(Context), routeData));",
+            "protectedSnippet": "T:System.Web.Routing.RequestContext",
+            "label": "T:System.Web.Routing.RequestContext",
+            "line": 65,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "01275f3c-5a18-40fe-8217-6f7c27ec444d",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "controller.Execute(new RequestContext(new HttpContextWrapper(Context), routeData));",
+              "protected": "M:System.Web.Routing.RequestContext.#ctor(System.Web.HttpContextBase,System.Web.Routing.RouteData)"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "controller.Execute(new RequestContext(new HttpContextWrapper(Context), routeData));",
+            "protectedSnippet": "M:System.Web.Routing.RequestContext.#ctor(System.Web.HttpContextBase,System.Web.Routing.RouteData)",
+            "label": "M:System.Web.Routing.RequestContext.#ctor(System.Web.HttpContextBase,System.Web.Routing.RouteData)",
+            "line": 65,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "c3b97104-d78f-48c5-bdb4-6c652a6e5efa",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.SystemWebAdapters, 1.4.0. Add package reference to Microsoft.AspNetCore.SystemWebAdapters, 1.4.0",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Server.ClearError();",
+              "protected": "T:System.Web.HttpServerUtility"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "Server.ClearError();",
+            "protectedSnippet": "T:System.Web.HttpServerUtility",
+            "label": "T:System.Web.HttpServerUtility",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.SystemWebAdapters",
+              "PackageNewVersion": "1.4.0"
+            },
+            "line": 62,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "c7c321f5-be55-4a70-9e0d-3eb65d47b95d",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.SystemWebAdapters, 1.4.0. Add package reference to Microsoft.AspNetCore.SystemWebAdapters, 1.4.0",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Server.ClearError();",
+              "protected": "P:System.Web.HttpApplication.Server"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "Server.ClearError();",
+            "protectedSnippet": "P:System.Web.HttpApplication.Server",
+            "label": "P:System.Web.HttpApplication.Server",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.SystemWebAdapters",
+              "PackageNewVersion": "1.4.0"
+            },
+            "line": 62,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "c8e21792-33a0-4c14-8f44-28f912220e7c",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.SystemWebAdapters, 1.4.0. Add package reference to Microsoft.AspNetCore.SystemWebAdapters, 1.4.0",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Server.ClearError();",
+              "protected": "M:System.Web.HttpServerUtility.ClearError"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "Server.ClearError();",
+            "protectedSnippet": "M:System.Web.HttpServerUtility.ClearError",
+            "label": "M:System.Web.HttpServerUtility.ClearError",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.SystemWebAdapters",
+              "PackageNewVersion": "1.4.0"
+            },
+            "line": 62,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "58064ed8-fee0-48e1-b7d9-437eb3ad40ec",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.SystemWebAdapters, 1.4.0. Add package reference to Microsoft.AspNetCore.SystemWebAdapters, 1.4.0",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "routeData.Values.Add(\u0022httpStatusCode\u0022, httpException.GetHttpCode());",
+              "protected": "M:System.Web.HttpException.GetHttpCode"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "routeData.Values.Add(\u0022httpStatusCode\u0022, httpException.GetHttpCode());",
+            "protectedSnippet": "M:System.Web.HttpException.GetHttpCode",
+            "label": "M:System.Web.HttpException.GetHttpCode",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.SystemWebAdapters",
+              "PackageNewVersion": "1.4.0"
+            },
+            "line": 58,
+            "column": 20
+          }
+        },
+        {
+          "incidentId": "48afed7e-38e0-4910-8a80-00efa802cfd3",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "routeData.Values.Add(\u0022httpStatusCode\u0022, httpException.GetHttpCode());",
+              "protected": "T:System.Web.Routing.RouteValueDictionary"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "routeData.Values.Add(\u0022httpStatusCode\u0022, httpException.GetHttpCode());",
+            "protectedSnippet": "T:System.Web.Routing.RouteValueDictionary",
+            "label": "T:System.Web.Routing.RouteValueDictionary",
+            "line": 58,
+            "column": 20
+          }
+        },
+        {
+          "incidentId": "42b68e5a-54ff-4d24-b3c6-e22f61876dba",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "routeData.Values.Add(\u0022httpStatusCode\u0022, httpException.GetHttpCode());",
+              "protected": "P:System.Web.Routing.RouteData.Values"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "routeData.Values.Add(\u0022httpStatusCode\u0022, httpException.GetHttpCode());",
+            "protectedSnippet": "P:System.Web.Routing.RouteData.Values",
+            "label": "P:System.Web.Routing.RouteData.Values",
+            "line": 58,
+            "column": 20
+          }
+        },
+        {
+          "incidentId": "419e6b02-61fd-46a4-8245-7e58ab1ac4d7",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "routeData.Values.Add(\u0022httpStatusCode\u0022, httpException.GetHttpCode());",
+              "protected": "M:System.Web.Routing.RouteValueDictionary.Add(System.String,System.Object)"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "routeData.Values.Add(\u0022httpStatusCode\u0022, httpException.GetHttpCode());",
+            "protectedSnippet": "M:System.Web.Routing.RouteValueDictionary.Add(System.String,System.Object)",
+            "label": "M:System.Web.Routing.RouteValueDictionary.Add(System.String,System.Object)",
+            "line": 58,
+            "column": 20
+          }
+        },
+        {
+          "incidentId": "926ac09a-9481-4950-8270-f769cc2d2abb",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "routeData.Values.Add(\u0022action\u0022, \u0022OtherHttpStatusCode\u0022);",
+              "protected": "T:System.Web.Routing.RouteValueDictionary"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "routeData.Values.Add(\u0022action\u0022, \u0022OtherHttpStatusCode\u0022);",
+            "protectedSnippet": "T:System.Web.Routing.RouteValueDictionary",
+            "label": "T:System.Web.Routing.RouteValueDictionary",
+            "line": 57,
+            "column": 20
+          }
+        },
+        {
+          "incidentId": "b7ba63e8-bf17-4dc6-a0ef-b85097f02a1f",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "routeData.Values.Add(\u0022action\u0022, \u0022OtherHttpStatusCode\u0022);",
+              "protected": "P:System.Web.Routing.RouteData.Values"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "routeData.Values.Add(\u0022action\u0022, \u0022OtherHttpStatusCode\u0022);",
+            "protectedSnippet": "P:System.Web.Routing.RouteData.Values",
+            "label": "P:System.Web.Routing.RouteData.Values",
+            "line": 57,
+            "column": 20
+          }
+        },
+        {
+          "incidentId": "6a6b6635-ec4e-481a-9e4c-1a1dcff5be68",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "routeData.Values.Add(\u0022action\u0022, \u0022OtherHttpStatusCode\u0022);",
+              "protected": "M:System.Web.Routing.RouteValueDictionary.Add(System.String,System.Object)"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "routeData.Values.Add(\u0022action\u0022, \u0022OtherHttpStatusCode\u0022);",
+            "protectedSnippet": "M:System.Web.Routing.RouteValueDictionary.Add(System.String,System.Object)",
+            "label": "M:System.Web.Routing.RouteValueDictionary.Add(System.String,System.Object)",
+            "line": 57,
+            "column": 20
+          }
+        },
+        {
+          "incidentId": "b0af9399-d1e3-4687-925d-abcd39091058",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "routeData.Values.Add(\u0022action\u0022, \u0022ServerError\u0022);",
+              "protected": "T:System.Web.Routing.RouteValueDictionary"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "routeData.Values.Add(\u0022action\u0022, \u0022ServerError\u0022);",
+            "protectedSnippet": "T:System.Web.Routing.RouteValueDictionary",
+            "label": "T:System.Web.Routing.RouteValueDictionary",
+            "line": 53,
+            "column": 20
+          }
+        },
+        {
+          "incidentId": "276cdf9f-c343-4ff7-9bd9-9ab586d1dc79",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "routeData.Values.Add(\u0022action\u0022, \u0022ServerError\u0022);",
+              "protected": "P:System.Web.Routing.RouteData.Values"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "routeData.Values.Add(\u0022action\u0022, \u0022ServerError\u0022);",
+            "protectedSnippet": "P:System.Web.Routing.RouteData.Values",
+            "label": "P:System.Web.Routing.RouteData.Values",
+            "line": 53,
+            "column": 20
+          }
+        },
+        {
+          "incidentId": "d232ce25-0d84-4a31-8826-463974c0be7f",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "routeData.Values.Add(\u0022action\u0022, \u0022ServerError\u0022);",
+              "protected": "M:System.Web.Routing.RouteValueDictionary.Add(System.String,System.Object)"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "routeData.Values.Add(\u0022action\u0022, \u0022ServerError\u0022);",
+            "protectedSnippet": "M:System.Web.Routing.RouteValueDictionary.Add(System.String,System.Object)",
+            "label": "M:System.Web.Routing.RouteValueDictionary.Add(System.String,System.Object)",
+            "line": 53,
+            "column": 20
+          }
+        },
+        {
+          "incidentId": "73aecd64-83cf-4c7a-b497-3c5b7aab6060",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "routeData.Values.Add(\u0022action\u0022, \u0022NotFound\u0022);",
+              "protected": "T:System.Web.Routing.RouteValueDictionary"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "routeData.Values.Add(\u0022action\u0022, \u0022NotFound\u0022);",
+            "protectedSnippet": "T:System.Web.Routing.RouteValueDictionary",
+            "label": "T:System.Web.Routing.RouteValueDictionary",
+            "line": 49,
+            "column": 20
+          }
+        },
+        {
+          "incidentId": "6c1ab6ab-263c-4707-9e2a-633efeb0d424",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "routeData.Values.Add(\u0022action\u0022, \u0022NotFound\u0022);",
+              "protected": "P:System.Web.Routing.RouteData.Values"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "routeData.Values.Add(\u0022action\u0022, \u0022NotFound\u0022);",
+            "protectedSnippet": "P:System.Web.Routing.RouteData.Values",
+            "label": "P:System.Web.Routing.RouteData.Values",
+            "line": 49,
+            "column": 20
+          }
+        },
+        {
+          "incidentId": "f61e5635-64fb-4f4e-b571-f838b944bdc1",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "routeData.Values.Add(\u0022action\u0022, \u0022NotFound\u0022);",
+              "protected": "M:System.Web.Routing.RouteValueDictionary.Add(System.String,System.Object)"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "routeData.Values.Add(\u0022action\u0022, \u0022NotFound\u0022);",
+            "protectedSnippet": "M:System.Web.Routing.RouteValueDictionary.Add(System.String,System.Object)",
+            "label": "M:System.Web.Routing.RouteValueDictionary.Add(System.String,System.Object)",
+            "line": 49,
+            "column": 20
+          }
+        },
+        {
+          "incidentId": "1e27a24b-a7f7-4e33-adf8-a5cafd0c786f",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "routeData.Values.Add(\u0022action\u0022, \u0022AccessDenied\u0022);",
+              "protected": "T:System.Web.Routing.RouteValueDictionary"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "routeData.Values.Add(\u0022action\u0022, \u0022AccessDenied\u0022);",
+            "protectedSnippet": "T:System.Web.Routing.RouteValueDictionary",
+            "label": "T:System.Web.Routing.RouteValueDictionary",
+            "line": 45,
+            "column": 20
+          }
+        },
+        {
+          "incidentId": "1c52c779-dd8e-4d5a-b308-211c8590b140",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "routeData.Values.Add(\u0022action\u0022, \u0022AccessDenied\u0022);",
+              "protected": "P:System.Web.Routing.RouteData.Values"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "routeData.Values.Add(\u0022action\u0022, \u0022AccessDenied\u0022);",
+            "protectedSnippet": "P:System.Web.Routing.RouteData.Values",
+            "label": "P:System.Web.Routing.RouteData.Values",
+            "line": 45,
+            "column": 20
+          }
+        },
+        {
+          "incidentId": "240292c7-1774-468c-aed0-9388afaef33a",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "routeData.Values.Add(\u0022action\u0022, \u0022AccessDenied\u0022);",
+              "protected": "M:System.Web.Routing.RouteValueDictionary.Add(System.String,System.Object)"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "routeData.Values.Add(\u0022action\u0022, \u0022AccessDenied\u0022);",
+            "protectedSnippet": "M:System.Web.Routing.RouteValueDictionary.Add(System.String,System.Object)",
+            "label": "M:System.Web.Routing.RouteValueDictionary.Add(System.String,System.Object)",
+            "line": 45,
+            "column": 20
+          }
+        },
+        {
+          "incidentId": "a61c50ff-5181-481b-ad28-9d12fe3fe00e",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.SystemWebAdapters, 1.4.0. Add package reference to Microsoft.AspNetCore.SystemWebAdapters, 1.4.0",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "switch (httpException.GetHttpCode())\r\n            {\r\n                case 403:\r\n                    routeData.Values.Add(\u0022action\u0022, \u0022AccessDenied\u0022);\r\n                    break;\r\n\r\n                case 404:\r\n                    routeData.Values.Add(\u0022action\u0022, \u0022NotFound\u0022);\r\n                    break;\r\n\r\n                case 500:\r\n                    routeData.Values.Add(\u0022action\u0022, \u0022ServerError\u0022);\r\n                    break;\r\n\r\n                default:\r\n                    routeData.Values.Add(\u0022action\u0022, \u0022OtherHttpStatusCode\u0022);\r\n                    routeData.Values.Add(\u0022httpStatusCode\u0022, httpException.GetHttpCode());\r\n                    break;\r\n            }",
+              "protected": "M:System.Web.HttpException.GetHttpCode"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "switch (httpException.GetHttpCode())\r\n            {\r\n                case 403:\r\n                    routeData.Values.Add(\u0022action\u0022, \u0022AccessDenied\u0022);\r\n                    break;\r\n\r\n                case 404:\r\n                    routeData.Values.Add(\u0022action\u0022, \u0022NotFound\u0022);\r\n                    break;\r\n\r\n                case 500:\r\n                    routeData.Values.Add(\u0022action\u0022, \u0022ServerError\u0022);\r\n                    break;\r\n\r\n                default:\r\n                    routeData.Values.Add(\u0022action\u0022, \u0022OtherHttpStatusCode\u0022);\r\n                    routeData.Values.Add(\u0022httpStatusCode\u0022, httpException.GetHttpCode());\r\n                    break;\r\n            }",
+            "protectedSnippet": "M:System.Web.HttpException.GetHttpCode",
+            "label": "M:System.Web.HttpException.GetHttpCode",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.SystemWebAdapters",
+              "PackageNewVersion": "1.4.0"
+            },
+            "line": 42,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "db9d6cc8-4684-4fba-b048-fee60f63b23c",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "routeData.Values.Add(\u0022fromAppErrorEvent\u0022, true);",
+              "protected": "T:System.Web.Routing.RouteValueDictionary"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "routeData.Values.Add(\u0022fromAppErrorEvent\u0022, true);",
+            "protectedSnippet": "T:System.Web.Routing.RouteValueDictionary",
+            "label": "T:System.Web.Routing.RouteValueDictionary",
+            "line": 40,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "d1acdb56-2ae8-4794-98b0-919daf1f5bce",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "routeData.Values.Add(\u0022fromAppErrorEvent\u0022, true);",
+              "protected": "P:System.Web.Routing.RouteData.Values"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "routeData.Values.Add(\u0022fromAppErrorEvent\u0022, true);",
+            "protectedSnippet": "P:System.Web.Routing.RouteData.Values",
+            "label": "P:System.Web.Routing.RouteData.Values",
+            "line": 40,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "4b0037f7-e459-4b7f-9488-7aa8e8b5a39a",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "routeData.Values.Add(\u0022fromAppErrorEvent\u0022, true);",
+              "protected": "M:System.Web.Routing.RouteValueDictionary.Add(System.String,System.Object)"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "routeData.Values.Add(\u0022fromAppErrorEvent\u0022, true);",
+            "protectedSnippet": "M:System.Web.Routing.RouteValueDictionary.Add(System.String,System.Object)",
+            "label": "M:System.Web.Routing.RouteValueDictionary.Add(System.String,System.Object)",
+            "line": 40,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "51bfed14-a37e-44b6-9950-35158a9a1c52",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "routeData.Values.Add(\u0022controller\u0022, \u0022Error\u0022);",
+              "protected": "T:System.Web.Routing.RouteValueDictionary"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "routeData.Values.Add(\u0022controller\u0022, \u0022Error\u0022);",
+            "protectedSnippet": "T:System.Web.Routing.RouteValueDictionary",
+            "label": "T:System.Web.Routing.RouteValueDictionary",
+            "line": 39,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "3959046e-b43a-4a0f-a213-720dcc64e6ec",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "routeData.Values.Add(\u0022controller\u0022, \u0022Error\u0022);",
+              "protected": "P:System.Web.Routing.RouteData.Values"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "routeData.Values.Add(\u0022controller\u0022, \u0022Error\u0022);",
+            "protectedSnippet": "P:System.Web.Routing.RouteData.Values",
+            "label": "P:System.Web.Routing.RouteData.Values",
+            "line": 39,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "38836202-e794-442c-8c72-2923c555724c",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "routeData.Values.Add(\u0022controller\u0022, \u0022Error\u0022);",
+              "protected": "M:System.Web.Routing.RouteValueDictionary.Add(System.String,System.Object)"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "routeData.Values.Add(\u0022controller\u0022, \u0022Error\u0022);",
+            "protectedSnippet": "M:System.Web.Routing.RouteValueDictionary.Add(System.String,System.Object)",
+            "label": "M:System.Web.Routing.RouteValueDictionary.Add(System.String,System.Object)",
+            "line": 39,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "83a70f70-c3a8-4a65-834f-427d0d12cdc9",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "RouteData routeData = new RouteData();",
+              "protected": "T:System.Web.Routing.RouteData"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "RouteData routeData = new RouteData();",
+            "protectedSnippet": "T:System.Web.Routing.RouteData",
+            "label": "T:System.Web.Routing.RouteData",
+            "line": 38,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "5b05af97-fa32-4e86-9807-29265ce034ce",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "RouteData routeData = new RouteData();",
+              "protected": "M:System.Web.Routing.RouteData.#ctor"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "RouteData routeData = new RouteData();",
+            "protectedSnippet": "M:System.Web.Routing.RouteData.#ctor",
+            "label": "M:System.Web.Routing.RouteData.#ctor",
+            "line": 38,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "3676e2bf-ec10-4fd0-afc5-5d41c9c212e9",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.SystemWebAdapters, 1.4.0. Add package reference to Microsoft.AspNetCore.SystemWebAdapters, 1.4.0",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Response.Clear();",
+              "protected": "T:System.Web.HttpResponse"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "Response.Clear();",
+            "protectedSnippet": "T:System.Web.HttpResponse",
+            "label": "T:System.Web.HttpResponse",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.SystemWebAdapters",
+              "PackageNewVersion": "1.4.0"
+            },
+            "line": 37,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "ddf98f0f-c2ac-48b5-a4b1-367a6f408de9",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.SystemWebAdapters, 1.4.0. Add package reference to Microsoft.AspNetCore.SystemWebAdapters, 1.4.0",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Response.Clear();",
+              "protected": "P:System.Web.HttpApplication.Response"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "Response.Clear();",
+            "protectedSnippet": "P:System.Web.HttpApplication.Response",
+            "label": "P:System.Web.HttpApplication.Response",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.SystemWebAdapters",
+              "PackageNewVersion": "1.4.0"
+            },
+            "line": 37,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "b0424bbb-b91d-43fe-95e2-a862b874e3eb",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.SystemWebAdapters, 1.4.0. Add package reference to Microsoft.AspNetCore.SystemWebAdapters, 1.4.0",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Response.Clear();",
+              "protected": "M:System.Web.HttpResponse.Clear"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "Response.Clear();",
+            "protectedSnippet": "M:System.Web.HttpResponse.Clear",
+            "label": "M:System.Web.HttpResponse.Clear",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.SystemWebAdapters",
+              "PackageNewVersion": "1.4.0"
+            },
+            "line": 37,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "ae9342b3-ea81-45c0-9a21-2e77c93dd731",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.SystemWebAdapters, 1.4.0. Add package reference to Microsoft.AspNetCore.SystemWebAdapters, 1.4.0",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "httpException = new HttpException(500, \u0022Internal Server Error\u0022, exception);",
+              "protected": "T:System.Web.HttpException"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "httpException = new HttpException(500, \u0022Internal Server Error\u0022, exception);",
+            "protectedSnippet": "T:System.Web.HttpException",
+            "label": "T:System.Web.HttpException",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.SystemWebAdapters",
+              "PackageNewVersion": "1.4.0"
+            },
+            "line": 35,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "09c6b5c1-99dd-4547-9475-bf47b488589d",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.SystemWebAdapters, 1.4.0. Add package reference to Microsoft.AspNetCore.SystemWebAdapters, 1.4.0",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "httpException = new HttpException(500, \u0022Internal Server Error\u0022, exception);",
+              "protected": "M:System.Web.HttpException.#ctor(System.Int32,System.String,System.Exception)"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "httpException = new HttpException(500, \u0022Internal Server Error\u0022, exception);",
+            "protectedSnippet": "M:System.Web.HttpException.#ctor(System.Int32,System.String,System.Exception)",
+            "label": "M:System.Web.HttpException.#ctor(System.Int32,System.String,System.Exception)",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.SystemWebAdapters",
+              "PackageNewVersion": "1.4.0"
+            },
+            "line": 35,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "3d63983b-6271-4574-b824-ea8459d05baa",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.SystemWebAdapters, 1.4.0. Add package reference to Microsoft.AspNetCore.SystemWebAdapters, 1.4.0",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "ShowCustomErrorPage(Server.GetLastError());",
+              "protected": "T:System.Web.HttpServerUtility"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "ShowCustomErrorPage(Server.GetLastError());",
+            "protectedSnippet": "T:System.Web.HttpServerUtility",
+            "label": "T:System.Web.HttpServerUtility",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.SystemWebAdapters",
+              "PackageNewVersion": "1.4.0"
+            },
+            "line": 28,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "0ab1ce7a-14ad-49cc-ba81-d4de4a25639b",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.SystemWebAdapters, 1.4.0. Add package reference to Microsoft.AspNetCore.SystemWebAdapters, 1.4.0",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "ShowCustomErrorPage(Server.GetLastError());",
+              "protected": "P:System.Web.HttpApplication.Server"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "ShowCustomErrorPage(Server.GetLastError());",
+            "protectedSnippet": "P:System.Web.HttpApplication.Server",
+            "label": "P:System.Web.HttpApplication.Server",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.SystemWebAdapters",
+              "PackageNewVersion": "1.4.0"
+            },
+            "line": 28,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "3a18973a-f301-4bd2-8c26-d386115993a6",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.SystemWebAdapters, 1.4.0. Add package reference to Microsoft.AspNetCore.SystemWebAdapters, 1.4.0",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "ShowCustomErrorPage(Server.GetLastError());",
+              "protected": "M:System.Web.HttpServerUtility.GetLastError"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "ShowCustomErrorPage(Server.GetLastError());",
+            "protectedSnippet": "M:System.Web.HttpServerUtility.GetLastError",
+            "label": "M:System.Web.HttpServerUtility.GetLastError",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.SystemWebAdapters",
+              "PackageNewVersion": "1.4.0"
+            },
+            "line": 28,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "eccd1f6e-b4d3-4e27-9d07-7d520bd7dcc6",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.SystemWebAdapters, 1.4.0. Add package reference to Microsoft.AspNetCore.SystemWebAdapters, 1.4.0",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "if (Context.IsCustomErrorEnabled)\r\n                ShowCustomErrorPage(Server.GetLastError());",
+              "protected": "T:System.Web.HttpContext"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "if (Context.IsCustomErrorEnabled)\r\n                ShowCustomErrorPage(Server.GetLastError());",
+            "protectedSnippet": "T:System.Web.HttpContext",
+            "label": "T:System.Web.HttpContext",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.SystemWebAdapters",
+              "PackageNewVersion": "1.4.0"
+            },
+            "line": 27,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "384b79c8-0ae6-4585-bdca-f9d3af41be53",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.SystemWebAdapters, 1.4.0. Add package reference to Microsoft.AspNetCore.SystemWebAdapters, 1.4.0",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "if (Context.IsCustomErrorEnabled)\r\n                ShowCustomErrorPage(Server.GetLastError());",
+              "protected": "P:System.Web.HttpApplication.Context"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "if (Context.IsCustomErrorEnabled)\r\n                ShowCustomErrorPage(Server.GetLastError());",
+            "protectedSnippet": "P:System.Web.HttpApplication.Context",
+            "label": "P:System.Web.HttpApplication.Context",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.SystemWebAdapters",
+              "PackageNewVersion": "1.4.0"
+            },
+            "line": 27,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "44f61adb-d8e6-4428-b183-af6dc76215cf",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "if (Context.IsCustomErrorEnabled)\r\n                ShowCustomErrorPage(Server.GetLastError());",
+              "protected": "P:System.Web.HttpContext.IsCustomErrorEnabled"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "if (Context.IsCustomErrorEnabled)\r\n                ShowCustomErrorPage(Server.GetLastError());",
+            "protectedSnippet": "P:System.Web.HttpContext.IsCustomErrorEnabled",
+            "label": "P:System.Web.HttpContext.IsCustomErrorEnabled",
+            "line": 27,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "a4d3defc-e4d8-4200-8cea-cce0a893ac12",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.SystemWebAdapters, 1.4.0. Add package reference to Microsoft.AspNetCore.SystemWebAdapters, 1.4.0",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "ShowCustomErrorPage(Server.GetLastError());",
+              "protected": "T:System.Web.HttpServerUtility"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "ShowCustomErrorPage(Server.GetLastError());",
+            "protectedSnippet": "T:System.Web.HttpServerUtility",
+            "label": "T:System.Web.HttpServerUtility",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.SystemWebAdapters",
+              "PackageNewVersion": "1.4.0"
+            },
+            "line": 22,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "9745a2b6-9a52-4948-82f1-67024af4bb0a",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.SystemWebAdapters, 1.4.0. Add package reference to Microsoft.AspNetCore.SystemWebAdapters, 1.4.0",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "ShowCustomErrorPage(Server.GetLastError());",
+              "protected": "P:System.Web.HttpApplication.Server"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "ShowCustomErrorPage(Server.GetLastError());",
+            "protectedSnippet": "P:System.Web.HttpApplication.Server",
+            "label": "P:System.Web.HttpApplication.Server",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.SystemWebAdapters",
+              "PackageNewVersion": "1.4.0"
+            },
+            "line": 22,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "145f7b62-72d4-4e3e-af0f-ccacef2d7d99",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.SystemWebAdapters, 1.4.0. Add package reference to Microsoft.AspNetCore.SystemWebAdapters, 1.4.0",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "ShowCustomErrorPage(Server.GetLastError());",
+              "protected": "M:System.Web.HttpServerUtility.GetLastError"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "ShowCustomErrorPage(Server.GetLastError());",
+            "protectedSnippet": "M:System.Web.HttpServerUtility.GetLastError",
+            "label": "M:System.Web.HttpServerUtility.GetLastError",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.SystemWebAdapters",
+              "PackageNewVersion": "1.4.0"
+            },
+            "line": 22,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "6ce47fea-42b1-4886-a064-6fae2c0693a5",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.SystemWebAdapters, 1.4.0. Add package reference to Microsoft.AspNetCore.SystemWebAdapters, 1.4.0",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "if (Context.IsCustomErrorEnabled)\r\n                ShowCustomErrorPage(Server.GetLastError());",
+              "protected": "T:System.Web.HttpContext"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "if (Context.IsCustomErrorEnabled)\r\n                ShowCustomErrorPage(Server.GetLastError());",
+            "protectedSnippet": "T:System.Web.HttpContext",
+            "label": "T:System.Web.HttpContext",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.SystemWebAdapters",
+              "PackageNewVersion": "1.4.0"
+            },
+            "line": 21,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "83af9377-b40b-4a57-8685-fef02da73d20",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.SystemWebAdapters, 1.4.0. Add package reference to Microsoft.AspNetCore.SystemWebAdapters, 1.4.0",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "if (Context.IsCustomErrorEnabled)\r\n                ShowCustomErrorPage(Server.GetLastError());",
+              "protected": "P:System.Web.HttpApplication.Context"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "if (Context.IsCustomErrorEnabled)\r\n                ShowCustomErrorPage(Server.GetLastError());",
+            "protectedSnippet": "P:System.Web.HttpApplication.Context",
+            "label": "P:System.Web.HttpApplication.Context",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.SystemWebAdapters",
+              "PackageNewVersion": "1.4.0"
+            },
+            "line": 21,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "db4075c6-f3b5-40c9-a537-80274c1c514c",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "if (Context.IsCustomErrorEnabled)\r\n                ShowCustomErrorPage(Server.GetLastError());",
+              "protected": "P:System.Web.HttpContext.IsCustomErrorEnabled"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "if (Context.IsCustomErrorEnabled)\r\n                ShowCustomErrorPage(Server.GetLastError());",
+            "protectedSnippet": "P:System.Web.HttpContext.IsCustomErrorEnabled",
+            "label": "P:System.Web.HttpContext.IsCustomErrorEnabled",
+            "line": 21,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "6a8dba20-c3cc-499d-93af-e16925a50cd9",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "RouteConfig.RegisterRoutes(RouteTable.Routes);",
+              "protected": "T:System.Web.Routing.RouteTable"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "RouteConfig.RegisterRoutes(RouteTable.Routes);",
+            "protectedSnippet": "T:System.Web.Routing.RouteTable",
+            "label": "T:System.Web.Routing.RouteTable",
+            "line": 15,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "1d6012b1-9488-46d8-84ea-90dd09998bf8",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "RouteConfig.RegisterRoutes(RouteTable.Routes);",
+              "protected": "T:System.Web.Routing.RouteCollection"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "RouteConfig.RegisterRoutes(RouteTable.Routes);",
+            "protectedSnippet": "T:System.Web.Routing.RouteCollection",
+            "label": "T:System.Web.Routing.RouteCollection",
+            "line": 15,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "b705267f-1863-4be0-81c6-e733831ad056",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "RouteConfig.RegisterRoutes(RouteTable.Routes);",
+              "protected": "P:System.Web.Routing.RouteTable.Routes"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "RouteConfig.RegisterRoutes(RouteTable.Routes);",
+            "protectedSnippet": "P:System.Web.Routing.RouteTable.Routes",
+            "label": "P:System.Web.Routing.RouteTable.Routes",
+            "line": 15,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "ff785978-703e-4b98-b25c-d37706e55824",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.SystemWebAdapters, 1.4.0. Add package reference to Microsoft.AspNetCore.SystemWebAdapters, 1.4.0",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "HttpApplication",
+              "protected": "M:System.Web.HttpApplication.#ctor"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "HttpApplication",
+            "protectedSnippet": "M:System.Web.HttpApplication.#ctor",
+            "label": "M:System.Web.HttpApplication.#ctor",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.SystemWebAdapters",
+              "PackageNewVersion": "1.4.0"
+            },
+            "line": 9,
+            "column": 45
+          }
+        },
+        {
+          "incidentId": "9ebb9fdf-10cb-4c68-b3a0-3fcce4bc0f4f",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.SystemWebAdapters, 1.4.0. Add package reference to Microsoft.AspNetCore.SystemWebAdapters, 1.4.0",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "HttpApplication",
+              "protected": "T:System.Web.HttpApplication"
+            },
+            "kind": "File",
+            "path": "Global.asax.cs",
+            "snippet": "HttpApplication",
+            "protectedSnippet": "T:System.Web.HttpApplication",
+            "label": "T:System.Web.HttpApplication",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.SystemWebAdapters",
+              "PackageNewVersion": "1.4.0"
+            },
+            "line": 9,
+            "column": 45
+          }
+        },
+        {
+          "incidentId": "0c0b549b-9f73-487e-ac16-0defb4459c62",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "public static void RegisterRoutes(RouteCollection routes)",
+              "protected": "T:System.Web.Routing.RouteCollection"
+            },
+            "kind": "File",
+            "path": "App_Start\\RouteConfig.cs",
+            "snippet": "public static void RegisterRoutes(RouteCollection routes)",
+            "protectedSnippet": "T:System.Web.Routing.RouteCollection",
+            "label": "T:System.Web.Routing.RouteCollection",
+            "line": 11,
+            "column": 8
+          }
+        },
+        {
+          "incidentId": "6873b433-96c7-476b-9d38-08f38b67601c",
+          "ruleId": "Binding.0007",
+          "projectPath": "DoctorPatient.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Binding redirect for Microsoft.AspNet.Identity.Core targets 2.0.0.0 but package provides 2.1.0",
+              "protected": "Binding redirect for Microsoft.AspNet.Identity.Core targets 2.0.0.0 but package provides 2.1.0"
+            },
+            "kind": "File",
+            "path": "Web.config",
+            "snippet": "Binding redirect for Microsoft.AspNet.Identity.Core targets 2.0.0.0 but package provides 2.1.0",
+            "protectedSnippet": "Binding redirect for Microsoft.AspNet.Identity.Core targets 2.0.0.0 but package provides 2.1.0",
+            "properties": {
+              "AssemblyName": "Microsoft.AspNet.Identity.Core",
+              "AssemblyCurrentVersion": "2.0.0.0",
+              "AssemblyNewVersion": "2.1.0"
+            }
+          }
+        }
+      ],
+      "features": [
+        {
+          "featureId": "SystemWeb",
+          "incidents": [
+            "0c0b549b-9f73-487e-ac16-0defb4459c62",
+            "9ebb9fdf-10cb-4c68-b3a0-3fcce4bc0f4f",
+            "ff785978-703e-4b98-b25c-d37706e55824",
+            "b705267f-1863-4be0-81c6-e733831ad056",
+            "1d6012b1-9488-46d8-84ea-90dd09998bf8",
+            "6a8dba20-c3cc-499d-93af-e16925a50cd9",
+            "db4075c6-f3b5-40c9-a537-80274c1c514c",
+            "83af9377-b40b-4a57-8685-fef02da73d20",
+            "6ce47fea-42b1-4886-a064-6fae2c0693a5",
+            "145f7b62-72d4-4e3e-af0f-ccacef2d7d99",
+            "9745a2b6-9a52-4948-82f1-67024af4bb0a",
+            "a4d3defc-e4d8-4200-8cea-cce0a893ac12",
+            "44f61adb-d8e6-4428-b183-af6dc76215cf",
+            "384b79c8-0ae6-4585-bdca-f9d3af41be53",
+            "eccd1f6e-b4d3-4e27-9d07-7d520bd7dcc6",
+            "3a18973a-f301-4bd2-8c26-d386115993a6",
+            "0ab1ce7a-14ad-49cc-ba81-d4de4a25639b",
+            "3d63983b-6271-4574-b824-ea8459d05baa",
+            "09c6b5c1-99dd-4547-9475-bf47b488589d",
+            "ae9342b3-ea81-45c0-9a21-2e77c93dd731",
+            "b0424bbb-b91d-43fe-95e2-a862b874e3eb",
+            "ddf98f0f-c2ac-48b5-a4b1-367a6f408de9",
+            "3676e2bf-ec10-4fd0-afc5-5d41c9c212e9",
+            "5b05af97-fa32-4e86-9807-29265ce034ce",
+            "83a70f70-c3a8-4a65-834f-427d0d12cdc9",
+            "38836202-e794-442c-8c72-2923c555724c",
+            "3959046e-b43a-4a0f-a213-720dcc64e6ec",
+            "51bfed14-a37e-44b6-9950-35158a9a1c52",
+            "4b0037f7-e459-4b7f-9488-7aa8e8b5a39a",
+            "d1acdb56-2ae8-4794-98b0-919daf1f5bce",
+            "db9d6cc8-4684-4fba-b048-fee60f63b23c",
+            "a61c50ff-5181-481b-ad28-9d12fe3fe00e",
+            "240292c7-1774-468c-aed0-9388afaef33a",
+            "1c52c779-dd8e-4d5a-b308-211c8590b140",
+            "1e27a24b-a7f7-4e33-adf8-a5cafd0c786f",
+            "f61e5635-64fb-4f4e-b571-f838b944bdc1",
+            "6c1ab6ab-263c-4707-9e2a-633efeb0d424",
+            "73aecd64-83cf-4c7a-b497-3c5b7aab6060",
+            "d232ce25-0d84-4a31-8826-463974c0be7f",
+            "276cdf9f-c343-4ff7-9bd9-9ab586d1dc79",
+            "b0af9399-d1e3-4687-925d-abcd39091058",
+            "6a6b6635-ec4e-481a-9e4c-1a1dcff5be68",
+            "b7ba63e8-bf17-4dc6-a0ef-b85097f02a1f",
+            "926ac09a-9481-4950-8270-f769cc2d2abb",
+            "419e6b02-61fd-46a4-8245-7e58ab1ac4d7",
+            "42b68e5a-54ff-4d24-b3c6-e22f61876dba",
+            "48afed7e-38e0-4910-8a80-00efa802cfd3",
+            "58064ed8-fee0-48e1-b7d9-437eb3ad40ec",
+            "c8e21792-33a0-4c14-8f44-28f912220e7c",
+            "c7c321f5-be55-4a70-9e0d-3eb65d47b95d",
+            "c3b97104-d78f-48c5-bdb4-6c652a6e5efa",
+            "01275f3c-5a18-40fe-8217-6f7c27ec444d",
+            "b27dab38-297f-4da1-ba8f-2502f1b7b93c",
+            "61c1ff88-4c19-4f65-b746-1ccb2de6e91a",
+            "3e3aacb1-de08-4027-9e08-49320905fc62",
+            "5669abbc-6ed2-4442-8828-c76512981ef8",
+            "6c791dd6-74dd-443b-a2ae-5b7e99d2b1f0"
+          ]
+        }
+      ]
+    }
+  ],
+  "rules": {
+    "NuGet.0002": {
+      "id": "NuGet.0002",
+      "isFeature": false,
+      "description": "NuGet package upgrade is recommended for selected target framework.\n\nStandard .NET packages are recommended to have versions matching version of .NET that project targets.\n\nSome other packages also are known to work better for selected target frameworks.",
+      "label": "NuGet package upgrade is recommended",
+      "severity": "Potential",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262530",
+          "isCustom": false
+        }
+      ]
+    },
+    "NuGet.0001": {
+      "id": "NuGet.0001",
+      "isFeature": false,
+      "description": "NuGet package is incompatible with selected target framework.\n\nPackage needs to be upgraded to a version supporting selected project target framework. If there no new package versions supporting new target framework, different package needs to be used and all code needs to be upgraded to new API.",
+      "label": "NuGet package is incompatible",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262529",
+          "isCustom": false
+        }
+      ]
+    },
+    "NuGet.0003": {
+      "id": "NuGet.0003",
+      "isFeature": false,
+      "description": "NuGet package functionality is included with framework reference.\n\nPackage needs to be removed.",
+      "label": "NuGet package functionality is included with framework reference",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262609",
+          "isCustom": false
+        }
+      ]
+    },
+    "NuGet.0004": {
+      "id": "NuGet.0004",
+      "isFeature": false,
+      "description": "NuGet package contains security vulnerabilities.\n\nPackage needs to be upgraded to a newer version that addresses known security vulnerabilities.",
+      "label": "NuGet package contains security vulnerability",
+      "severity": "Optional",
+      "effort": 1
+    },
+    "NuGet.0005": {
+      "id": "NuGet.0005",
+      "isFeature": false,
+      "description": "NuGet package is deprecated.\n\nGo to its documentation and if there is a guidance for replacement of functionality provided by this package.",
+      "label": "NuGet package is deprecated",
+      "severity": "Optional",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262531",
+          "isCustom": false
+        }
+      ]
+    },
+    "Project.0001": {
+      "id": "Project.0001",
+      "isFeature": false,
+      "description": "Project file needs to be converted to SDK-style. Modern .NET framework projects require a change in the project file format and use SDK corresponding to project flavor and functionality.",
+      "label": "Project file needs to be converted to SDK-style",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Overview of porting from .NET Framework to .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        },
+        {
+          "title": ".NET project SDKs",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265226",
+          "isCustom": false
+        }
+      ]
+    },
+    "Project.0002": {
+      "id": "Project.0002",
+      "isFeature": false,
+      "description": "Project\u0027s target framework(s) needs to be changed to the new target framework that you selected for this upgrade.\n\nDuring upgrade target framework will be adjusted to corresponding platform when applicable. In some cases project would result in multiple target frameworks after the upgrade if it was using features that now have their own platforms in modern .NET frameworks (windows, iOS, Android etc).",
+      "label": "Project\u0027s target framework(s) needs to be changed",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Overview of porting from .NET Framework to .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        },
+        {
+          "title": ".NET project SDKs",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265226",
+          "isCustom": false
+        }
+      ]
+    },
+    "Feature.0001": {
+      "id": "Feature.0001",
+      "isFeature": true,
+      "description": "System.Web.Optimization bundling and minification is not supported in .NET Core and should be replaced with actual html tags pointing to content files.",
+      "label": "System.Web.Optimization bundling and minification is not supported in .NET Core and should be replaced with actual html tags pointing to content files",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        }
+      ]
+    },
+    "Feature.1000": {
+      "id": "Feature.1000",
+      "isFeature": true,
+      "description": "Convert application initialization code from Global.asax.cs to .NET Core and clean up Global.asax.cs.",
+      "label": "Convert application initialization code from Global.asax.cs to .NET Core and clean up Global.asax.cs",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        }
+      ]
+    },
+    "Feature.0002": {
+      "id": "Feature.0002",
+      "isFeature": true,
+      "description": "Routes registration via RouteCollection is not supported in .NET Core and needs to be converted to the route mappings on the application object.",
+      "label": "Routes registration via RouteCollection is not supported in .NET Core and needs to be converted to the route mappings on the application object",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        }
+      ]
+    },
+    "Api.0002": {
+      "id": "Api.0002",
+      "isFeature": false,
+      "description": "API is source incompatible for selected .NET version: requires code changes to compile successfully when targeting a new version, such as removing obsolete APIs or changing method signatures.",
+      "label": "Source incompatible for selected .NET version",
+      "severity": "Potential",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Breaking changes in .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262679",
+          "isCustom": false
+        }
+      ]
+    },
+    "Api.0001": {
+      "id": "Api.0001",
+      "isFeature": false,
+      "description": "API is binary incompatible for selected .NET version: affects existing binaries, often requiring recompilation, because the API has changed in a way that prevents older binaries from loading or executing.",
+      "label": "Binary incompatible for selected .NET version",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Breaking changes in .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262679",
+          "isCustom": false
+        }
+      ]
+    },
+    "SystemWeb": {
+      "id": "SystemWeb",
+      "isFeature": false,
+      "description": "Legacy ASP.NET Framework APIs for web applications (System.Web.*) that don\u0027t exist in ASP.NET Core due to architectural differences. ASP.NET Core represents a complete redesign of the web framework. Migrate to ASP.NET Core equivalents or consider System.Web.Adapters package for compatibility.",
+      "label": "ASP.NET Framework (System.Web)",
+      "severity": "Mandatory",
+      "effort": 4,
+      "links": [
+        {
+          "title": "Migrate from ASP.NET to ASP.NET Core",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2341905",
+          "isCustom": false
+        }
+      ]
+    },
+    "Binding.0007": {
+      "id": "Binding.0007",
+      "isFeature": false,
+      "description": "A binding redirect\u0027s newVersion is lower than the version provided by the NuGet package. This forced downgrade usually causes a load failure at runtime because the expected assembly version is not available.",
+      "label": "Binding redirect forces version downgrade",
+      "severity": "Potential",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Assembly binding redirection",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262689",
+          "isCustom": false
+        }
+      ]
+    }
+  }
+}
